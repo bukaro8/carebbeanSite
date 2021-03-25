@@ -12,8 +12,8 @@
   <header>
     <nav class="main-menu">
       <ul class="main-menu__list">
-        <a href="foodMenu" class="main-menu__item"><li >menu</li></a>
-        <a href="" class="main-menu__item"><li >story</li></a>
+        <a href="#foodMenu" class="main-menu__item"><li >menu</li></a>
+        <a href="#story" class="main-menu__item"><li >story</li></a>
         <a href="" class="main-menu__item"><li >contact</li></a>
       </ul>
     </nav>
@@ -25,7 +25,7 @@
       </figure>
       <button class="button button--green">order now</button>
     </section>
-    <section class="storyContainer">
+    <section id="story" class="storyContainer">
       <div class="storyContainer__box">
       <h3 class="subtitle subtitle__story">story</h3>
       <p class="storyContainer__legend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi iste est dolores ut eius laboriosam. Sit eos magni accusantium pariatur accusamus? Quasi, corporis provident ipsam voluptatem magnam eaque incidunt?</p>
@@ -34,38 +34,51 @@
         <img class="story__image" src="img/story-image.jpg" alt="">
       </figure>
     </section>
-    <section class="foodMenuContainer">
-        <h3 id="foodMenu"class="subtitle subtitle__foodMenu">Menu</h3>
+    <section id="foodMenu"class="foodMenuContainer">
+        <h3 class="subtitle subtitle__foodMenu">Menu</h3>
         <article class="gridContainer">
           <!-- menu1--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu1.jpg" alt="rice with peas">
+            <img src="img/menu1.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu2--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu2.jpg" alt="rice with peas">
+            <img src="img/menu2.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu3--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu3.jpg" alt="rice with peas">
+            <img src="img/menu3.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu4--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu4.jpg" alt="rice with peas">
+            <img src="img/menu4.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu5--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu5.jpg" alt="rice with peas">
+            <img src="img/menu5.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu6--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu6.jpg" alt="rice with peas">
+            <img src="img/menu6.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu7--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu7.jpg" alt="rice with peas">
+            <img src="img/menu7.jpg" alt="rice with peas"/>
           </figure>  
         </article>
+    </section>
+    <section id="contact" class="contactContainer">
+      <h3 class="subtitle subtitle__contact">contact us</h3>
+      <article class="contact__articleBox">
+        <div class="contact__articleBox--left">
+        <p class="contact__item--tel">tel</p>
+        <p class="contact__item--tel">tel</p>
+        <p class="contact__item--tel">tel</p>
+      </div>
+      <figure class="contactImage__container">
+        <img class="contactImage__image"src="img/front.jpg" alt="front of the restaurant">
+      </figure>
+      </article>
     </section>
   </main>
 </body>
