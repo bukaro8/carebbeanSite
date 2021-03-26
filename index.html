@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
@@ -19,67 +21,75 @@
     </nav>
   </header>
   <main>
+    <!-- ------------hero-------------------------- -->
     <section class="heroContainer">
+      <h1 id="main_title"class="hero__title">autentic jamaican flavours</h1>
       <figure class="hero__logoContainer">
         <img class="hero__logo"src="img/logo.png" alt="caribbean food logo"/>
       </figure>
-      <button class="button button--green">order now</button>
+      <button class="button button--green button--colorChanging">order now</button>
     </section>
+    <!-- ===============story================= -->
     <section id="story" class="storyContainer">
       <div class="storyContainer__box">
-      <h3 class="subtitle subtitle__story">story</h3>
-      <p class="storyContainer__legend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi iste est dolores ut eius laboriosam. Sit eos magni accusantium pariatur accusamus? Quasi, corporis provident ipsam voluptatem magnam eaque incidunt?</p>
+        <h3 class="subtitle subtitle--green">story</h3>
+        <p class="storyContainer__legend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi iste est dolores ut eius laboriosam. Sit eos magni accusantium pariatur accusamus? Quasi, corporis provident ipsam voluptatem magnam eaque incidunt? <br><br>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo reiciendis cumque deserunt rem commodi voluptatibus in laborum, molestias facilis! Dolores aliquam voluptatem iste consequatur voluptatum quia inventore iusto molestiae animi?</p>
       </div>
       <figure class="story__imageContainer">
         <img class="story__image" src="img/story-image.jpg" alt="">
       </figure>
     </section>
+    <!-- ===============food menu====================== -->
     <section id="foodMenu"class="foodMenuContainer">
-        <h3 class="subtitle subtitle__foodMenu">Menu</h3>
+      <h3 class="subtitle subtitle--green">Menu</h3>
+      
+        
         <article class="gridContainer">
           <!-- menu1--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu1.jpg" alt="rice with peas"/>
+            <img class="foodMenu__image"src="img/menu1.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu2--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu2.jpg" alt="rice with peas"/>
+            <img class="foodMenu__image" src="img/menu2.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu3--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu3.jpg" alt="rice with peas"/>
+            <img class="foodMenu__image"  src="img/menu3.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu4--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu4.jpg" alt="rice with peas"/>
+            <img class="foodMenu__image" src="img/menu4.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu5--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu5.jpg" alt="rice with peas"/>
+            <img  class="foodMenu__image"src="img/menu5.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu6--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu6.jpg" alt="rice with peas"/>
+            <img class="foodMenu__image" src="img/menu6.jpg" alt="rice with peas"/>
           </figure>  
           <!-- menu7--- -->
           <figure class="foodMenu__imamgeContainer">
-            <img src="img/menu7.jpg" alt="rice with peas"/>
+            <img  class="foodMenu__image" src="img/menu7.jpg" alt="rice with peas"/>
           </figure>  
         </article>
     </section>
-    <section id="contact" class="contactContainer">
+    <!-- <section id="contact" class="contactContainer">
       <h3 class="subtitle subtitle__contact">contact us</h3>
       <article class="contact__articleBox">
         <div class="contact__articleBox--left">
         <p class="contact__item--tel">tel</p>
         <p class="contact__item--tel">tel</p>
         <p class="contact__item--tel">tel</p>
-      </div>
+      
       <figure class="contactImage__container">
         <img class="contactImage__image"src="img/front.jpg" alt="front of the restaurant">
       </figure>
       </article>
-    </section>
+    
+    </section> -->
   </main>
 </body>
 </html>

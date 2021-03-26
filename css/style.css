@@ -1,0 +1,245 @@
+*, *::before, *::after {
+  box-sizing: inherit; 
+  margin: 0;
+  padding: 0;
+  border: 0;}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Oswald&family=Pacifico&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ /* --------------FONTS ------------ */
+ /* font-family: 'Fredoka One', cursive;
+ font-family: 'Lobster', cursive;
+ font-family: 'Oswald', sans-serif;
+ font-family: 'Pacifico', cursive; 
+ rgb(0,152,70)
+ /* ------------------------------------- */
+body{
+  font-size: 1.6rem;
+  font-family: 'Pacifico', cursive;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color:black;
+}
+ul li{
+  list-style: none;
+}
+/* =================header================= */
+.main-menu__list{
+  display: flex;
+  flex-direction: row;
+}
+.main-menu__item{
+  text-transform: capitalize;
+  padding-right: 2rem;
+  color: white;
+}
+.main-menu{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color:rgb(0,152,70);
+  height: 5rem;
+}
+/* ===================hero===================== */
+.heroContainer{
+  width: 100%;
+  height: 100vh;
+  min-height: auto;
+  
+  background-image: url(/img/background-hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__title{
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Lobster', cursive;
+  color:rgb(197, 35, 35);
+  text-transform: capitalize;
+  margin:0;
+  margin-bottom:2rem;
+}
+
+.hero__logoContainer{
+  width: 40rem;
+  height: auto;
+  padding-bottom: 3%;
+}
+.hero__logo{
+  width: 100%;
+}
+.button{
+  width: 30rem;
+  height: 5rem;
+  border-radius: 11.5rem;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+}
+.button--green{
+  background-color:rgba(0, 152, 71, 0.815);
+  color:white;
+  cursor: pointer;
+  margin:4rem;
+}
+.button--colorChanging:hover {
+  background: linear-gradient(-45deg, #66ac17, #00f549, #bbd1da, #0ddaaa);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* =====================story================== */
+  .storyContainer{
+    width: 100%;
+    min-height: auto;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(120, 165, 202, 0.473);
+  }
+  .storyContainer__box{/*contains the story legend*/
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subtitle{
+    text-transform: capitalize;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+  }
+  .subtitle--green{
+    color:rgb(0,152,70);
+    margin-bottom: 3%;
+  }
+  .storyContainer__legend{
+    color:rgb(100, 72, 72);
+    text-align: justify;
+    font-size: 2rem;
+    height: 100%;
+    
+  }
+  .story__imageContainer{
+    width:25%;
+    height: 100%
+  }
+  .story__image{
+    width: 100%;
+    height: 100%;
+  }
+/* =================food menu============== */
+.foodMenuContainer{
+  display:flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/img/gettyimages-1132439283-640x640.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gridContainer{
+  width: 100%;
+  display:grid;
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 2%;
+
+}
+.foodMenu__imamgeContainer{
+  width: 90%;
+  height: 100%;
+}
+.foodMenu__image{
+  width: 100%;
+}
+.foodMenu__imamgeContainer:nth-of-type(1){
+  grid-column:2/3 ;
+  margin: auto;
+}
+.foodMenu__imamgeContainer:nth-of-type(2){
+  grid-column:3/4 ;
+  margin: auto;
+}
+.foodMenu__imamgeContainer:nth-of-type(3){
+  grid-column: 4/5;
+  margin: auto;
+  
+}
+.foodMenu__imamgeContainer:nth-of-type(4){
+  grid-column:2/3 ;
+  margin: auto;
+}
+.foodMenu__imamgeContainer:nth-of-type(5){
+  grid-column:3/4 ;
+  grid-row: 3/4;
+  margin: auto;
+}
+.foodMenu__imamgeContainer:nth-of-type(6){
+  grid-column: 4/5;
+  margin: auto;
+  
+}
+.foodMenu__imamgeContainer:nth-of-type(7){
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin: auto;
+  
+}
+
+
+
+
+  @media screen and (max-width:1000px){
+    /* ========story========== */
+    .storyContainer{
+      flex-direction: column;
+    }
+    .storyContainer__box{
+      width:50%;
+      margin:2% 0  2% 0;
+      
+    }
+    .storyContainer__legend{
+      font-size: 1.6rem;
+    }
+    .story__imageContainer{
+      width:30%;
+    }
+    /* ==============menu============== */
+    .gridContainer{
+      display:flex;
+      flex-direction: column;
+    }
+    .foodMenu__imamgeContainer{
+      width: 70%;
+      padding-bottom: 1rem;
+    }
+    /* ================= */
+  }
